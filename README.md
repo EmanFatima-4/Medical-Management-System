@@ -1,79 +1,39 @@
-# 🏥 Medical Management System
+# Medical Management System
 
-A complete Medical Management System developed using HTML, CSS, JavaScript and REST API.
+A full-stack medical management system built with HTML, CSS, JavaScript, and a Node.js backend.
 
-## Features
+## Run Locally
 
-### 👨‍⚕️ Doctor Module
-
-- Doctor Profile
-- Pending Appointments
-- Today's Appointments
-- Update Patient History
-- Generate Bills
-- View Patient History
-
-### 🧑 Patient Module
-
-- Patient Registration
-- Patient Dashboard
-- Book Appointment
-- View Bills
-- Treatment History
-
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- REST API
-- Local Storage
-
-## Project Structure
-
-```
-Medical-Management-System/
-│
-├── index.html
-├── styles.css
-├── app.js
-├── README.md
-└── .gitignore
-```
-
-## How to Run
-
-1. Download or Clone the repository.
-
-```
-git clone https://github.com/YourUsername/Medical-Management-System.git
-```
-
-2. Open the project folder.
-
-3. Start the backend server.
-
-```
-npm install
+```bash
 npm start
 ```
 
-4. Open
+Then open:
 
+```text
+http://localhost:3000
 ```
-index.html
+
+## Features
+
+- Patient creation
+- Patient profile home
+- Patient appointment booking
+- Patient bill history
+- Patient treatment history
+- Doctor profile
+- Doctor pending appointments
+- Doctor today's appointments with accept/reject
+- Treatment history updates
+- Bill generation
+- Doctor patient history
+
+## Deploy
+
+This app can be deployed as a Node web service. The server starts with:
+
+```bash
+npm start
 ```
 
-in your browser.
-
-## Future Improvements
-
-- Login Authentication
-- Admin Dashboard
-- Database Integration (MySQL/MongoDB)
-- Report Generation
-- Email Notifications
-
-## Author
-
-Your Name
+The included `render.yaml` is ready for Render Blueprint deployment.

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="logo-mark">+</span>
+          <div>
+            <p class="eyebrow">Clinic Portal</p>
+            <h1>Medical Management</h1>
+          </div>
+        </div>
+
+        <div class="role-switch" aria-label="Choose portal">
+          <button class="role-button active" data-role="patient" type="button">Patient</button>
+          <button class="role-button" data-role="doctor" type="button">Doctor</button>
+        </div>
+
+        <label class="select-field" id="patientChooserWrap">
+          <span>Active patient</span>
+          <select id="patientSelect"></select>
+        </label>
+
+        <label class="select-field hidden" id="doctorChooserWrap">
+          <span>Active doctor</span>
+          <select id="doctorSelect"></select>
+        </label>
+
+        <nav class="nav-list" id="navList" aria-label="Portal sections"></nav>
+
+        <div class="sidebar-card">
+          <span class="metric-label">Today</span>
+          <strong id="todayLabel"></strong>
+          <small id="quickStats"></small>
+        </div>
+      </aside>
+
+      <section class="content-shell">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="portalLabel">Patient Portal</p>
+            <h2 id="pageTitle">Patient Creation</h2>
+          </div>
+          <button class="secondary-button" id="resetDemoBtn" type="button">Reset Demo Data</button>
+        </header>
+
+        <section id="viewRoot" class="view-root" aria-live="polite"></section>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

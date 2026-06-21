@@ -1,0 +1,20 @@
+{
+  "name": "medical-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack medical management system with a Node backend and browser frontend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check app.js"
+  },
+  "keywords": [
+    "medical",
+    "clinic",
+    "appointments"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^14.0.0"
+  }
+}
